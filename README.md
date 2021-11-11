@@ -11,6 +11,8 @@
 - Getting started is at hello folder.
 - Creating a module is at greetings folder.
 - Using a module (including a local one) is at hello folder.
+- Raising and handling errors are at greetings folder and at hello folder.
+- Random number and slice are at greetings folder.
 
 ## GitHub Actions included
 

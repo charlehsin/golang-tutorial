@@ -2,16 +2,32 @@ package main
 
 import (
 	"fmt"
-
-	"rsc.io/quote"
+	"log"
 
 	"example.com/greetings"
+	"rsc.io/quote"
 )
 
 func main() {
+	// Set properties of the predefined Logger, including
+	// the log entry prefix and a flag to disable printing
+	// the time, source file, and line number.
+	log.SetPrefix("greetings: ")
+	log.SetFlags(0)
+
+	// Use other Go module - quote
+	fmt.Print("Going to print a message from quote module: ")
 	fmt.Println(quote.Go())
 
-	// Get a greeting message and print it.
-	message := greetings.Hello("Gladys")
+	// Use local Go module - greetings, with error handling
+	// TODO: If you want to see error, pass "" instead of "Gladys".
+	message, err := greetings.Hello("Gladys")
+	// If an error was returned, print it to the console and
+	// exit the program.
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Print("Going to print a message from local greetings module: ")
 	fmt.Println(message)
 }
