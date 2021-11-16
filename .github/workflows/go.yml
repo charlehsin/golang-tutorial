@@ -22,6 +22,6 @@ jobs:
       working-directory: ./getting-started/hello
       run: go build -v ./...
 
-    #- name: Test
-    #  working-directory: ./hello
-    #  run: go test -v ./...
+    - name: Test
+      working-directory: ./getting-started/greetings
+      run: go test -v ./...

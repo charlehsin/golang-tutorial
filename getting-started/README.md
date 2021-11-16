@@ -47,3 +47,11 @@
 - This is at greetings and hello folders.
 - Commands at hello folder
    - (run) go run .
+
+## Unit testing
+
+- https://golang.org/doc/tutorial/add-a-test
+- This is at greetings folder.
+- Commands at greetings folder
+   - (run unit testing) go test
+   - (run unit testing with verbose flag) go test -v
