@@ -2,6 +2,7 @@
 
 ## Basic
 
+- https://tour.golang.org/welcome/1
 - https://golang.org/doc/tutorial/getting-started
 - This is at hello folder.
 - Commands at hello folder
@@ -55,3 +56,11 @@
 - Commands at greetings folder
    - (run unit testing) go test
    - (run unit testing with verbose flag) go test -v
+
+## Compile and install the application
+
+- https://golang.org/doc/tutorial/compile-install
+- Commands at hello folder
+   - (build an exe) go build
+   - (discover the go install path) go list -f '{{.Target}}'
+   - (build and put the exe in the install path) go install
