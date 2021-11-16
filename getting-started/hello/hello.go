@@ -28,6 +28,16 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Use local Go module - greetings, with a slice of names.
+	names := []string{"Gladys", "Samantha", "Darrin"}
+	// Request greeting messages for the names.
+	messages, err := greetings.Hellos(names)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	fmt.Print("Going to print a message from local greetings module: ")
 	fmt.Println(message)
+	fmt.Print("Going to print a message from local greetings module: ")
+	fmt.Println(messages)
 }
