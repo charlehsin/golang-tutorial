@@ -9,6 +9,7 @@
    - Commands
       - go version
 - Getting started guide is at getting-started folder.
+- Data access to relational database is at data-access folder.
 
 ## GitHub Actions included
 

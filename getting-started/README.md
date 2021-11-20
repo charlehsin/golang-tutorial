@@ -35,7 +35,7 @@
 - Commands at hello folder
    - (run) go run .
 
-## Randome number and slice
+## Random number and slice
 
 - https://golang.org/doc/tutorial/random-greeting
 - This is at greetings folder.

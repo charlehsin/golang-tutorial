@@ -18,10 +18,14 @@ jobs:
       with:
         go-version: 1.17
 
-    - name: Build hello
+    - name: Build getting-started
       working-directory: ./getting-started/hello
       run: go build -v ./...
 
-    - name: Test
+    - name: Test getting-started
       working-directory: ./getting-started/greetings
       run: go test -v ./...
+
+    - name: Build data-access
+      working-directory: ./data-access
+      run: go build -v ./...
