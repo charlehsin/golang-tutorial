@@ -10,6 +10,7 @@
       - go version
 - Getting started guide is at getting-started folder.
 - Data access to relational database is at data-access folder.
+- Web service is at web-service-gin folder.
 
 ## GitHub Actions included
 
